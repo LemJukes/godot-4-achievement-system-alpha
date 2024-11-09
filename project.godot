@@ -15,10 +15,6 @@ run/main_scene="res://itisgame.tscn"
 config/features=PackedStringArray("4.3", "GL Compatibility")
 config/icon="res://icon.svg"
 
-[autoload]
-
-AchievementManager="*res://btAchvBase/Achievements/Scripts/AchievementManager.gd"
-
 [rendering]
 
 renderer/rendering_method="gl_compatibility"
