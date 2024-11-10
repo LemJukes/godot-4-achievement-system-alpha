@@ -1,0 +1,67 @@
+[gd_scene load_steps=2 format=3 uid="uid://1r26o6r8cjpy"]
+
+[ext_resource type="Script" path="res://itisgame.gd" id="1_mv6r5"]
+
+[node name="itisgame" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_mv6r5")
+
+[node name="AspectRatioContainer" type="AspectRatioContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="AspectRatioContainer"]
+layout_mode = 2
+alignment = 1
+
+[node name="Label" type="Label" parent="AspectRatioContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 64
+text = "it is game"
+horizontal_alignment = 1
+
+[node name="HBoxContainer" type="HBoxContainer" parent="AspectRatioContainer/VBoxContainer"]
+layout_mode = 2
+alignment = 1
+
+[node name="ScoreLabel" type="Label" parent="AspectRatioContainer/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+text = "Score: "
+
+[node name="ScoreValLabel" type="Label" parent="AspectRatioContainer/VBoxContainer/HBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+text = "0"
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="AspectRatioContainer/VBoxContainer"]
+layout_mode = 2
+alignment = 1
+
+[node name="ButtonLabel" type="Label" parent="AspectRatioContainer/VBoxContainer/HBoxContainer2"]
+layout_mode = 2
+text = "Increase Score Button:"
+
+[node name="ScoreButton" type="Button" parent="AspectRatioContainer/VBoxContainer/HBoxContainer2"]
+layout_mode = 2
+text = "Click Here"
+
+[node name="HBoxContainer3" type="HBoxContainer" parent="AspectRatioContainer/VBoxContainer"]
+layout_mode = 2
+alignment = 1
+
+[node name="ResetButton" type="Button" parent="AspectRatioContainer/VBoxContainer/HBoxContainer3"]
+layout_mode = 2
+text = "Reset Game
+"
+
+[connection signal="pressed" from="AspectRatioContainer/VBoxContainer/HBoxContainer2/ScoreButton" to="." method="_on_score_button_pressed"]
+[connection signal="pressed" from="AspectRatioContainer/VBoxContainer/HBoxContainer3/ResetButton" to="." method="_on_reset_button_pressed"]
