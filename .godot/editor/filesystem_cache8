@@ -1,5 +1,6 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1731128509
+::res://::1731275695
 icon.svg::CompressedTexture2D::4834552201567963703::1731127977::1731127987::1::::<><>::
-itisgame.gd::GDScript::-1::1731128071::0::1::::<>Control<>::
-itisgame.tscn::PackedScene::1861699858856034234::1731128185::0::1::::<><>::res://itisgame.gd
+itisgame.gd::GDScript::-1::1731129313::0::1::::<>Control<>::
+itisgame.tscn::PackedScene::1861699858856034234::1731180271::0::1::::<><>::res://itisgame.gd
+save_manager.gd::GDScript::-1::1731129180::0::1::::<>Node<>::
