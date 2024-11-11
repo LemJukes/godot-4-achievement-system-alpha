@@ -3,6 +3,56 @@
         "name": "Beginner",
         "description": "Score your first point",
         "requirement": 1,
+        "unlocked": false,
+        "unlock_time": ""
+
+    },
+    "novice": {
+        "name": "Novice",
+        "description": "Reach 2 points",
+        "requirement": 2,
+        "unlocked": false
+    },
+    "learner": {
+        "name": "Learner",
+        "description": "Reach 3 points",
+        "requirement": 3,
+        "unlocked": false
+    },
+    "apprentice": {
+        "name": "Apprentice",
+        "description": "Reach 4 points",
+        "requirement": 4,
+        "unlocked": false
+    },
+    "trainee": {
+        "name": "Trainee",
+        "description": "Reach 5 points",
+        "requirement": 5,
+        "unlocked": false
+    },
+    "rookie": {
+        "name": "Rookie",
+        "description": "Reach 6 points",
+        "requirement": 6,
+        "unlocked": false
+    },
+    "newbie": {
+        "name": "Newbie",
+        "description": "Reach 7 points",
+        "requirement": 7,
+        "unlocked": false
+    },
+    "amateur": {
+        "name": "Amateur",
+        "description": "Reach 8 points",
+        "requirement": 8,
+        "unlocked": false
+    },
+    "novitiate": {
+        "name": "Novitiate",
+        "description": "Reach 9 points",
+        "requirement": 9,
         "unlocked": false
     },
     "intermediate": {
@@ -11,10 +61,94 @@
         "requirement": 10,
         "unlocked": false
     },
+    "adept": {
+        "name": "Adept",
+        "description": "Reach 12 points",
+        "requirement": 12,
+        "unlocked": false
+    },
+    "skilled": {
+        "name": "Skilled",
+        "description": "Reach 14 points",
+        "requirement": 14,
+        "unlocked": false
+    },
+    "proficient": {
+        "name": "Proficient",
+        "description": "Reach 16 points",
+        "requirement": 16,
+        "unlocked": false
+    },
+    "competent": {
+        "name": "Competent",
+        "description": "Reach 18 points",
+        "requirement": 18,
+        "unlocked": false
+    },
+    "capable": {
+        "name": "Capable",
+        "description": "Reach 20 points",
+        "requirement": 20,
+        "unlocked": false
+    },
+    "seasoned": {
+        "name": "Seasoned",
+        "description": "Reach 25 points",
+        "requirement": 25,
+        "unlocked": false
+    },
+    "experienced": {
+        "name": "Experienced",
+        "description": "Reach 30 points",
+        "requirement": 30,
+        "unlocked": false
+    },
+    "advanced": {
+        "name": "Advanced",
+        "description": "Reach 35 points",
+        "requirement": 35,
+        "unlocked": false
+    },
     "expert": {
         "name": "Expert",
-        "description": "Reach 100 points",
-        "requirement": 100,
+        "description": "Reach 40 points",
+        "requirement": 40,
+        "unlocked": false
+    },
+    "veteran": {
+        "name": "Veteran",
+        "description": "Reach 50 points",
+        "requirement": 50,
+        "unlocked": false
+    },
+    "master": {
+        "name": "Master",
+        "description": "Reach 60 points",
+        "requirement": 60,
+        "unlocked": false
+    },
+    "grandmaster": {
+        "name": "Grandmaster",
+        "description": "Reach 70 points",
+        "requirement": 70,
+        "unlocked": false
+    },
+    "legend": {
+        "name": "Legend",
+        "description": "Reach 80 points",
+        "requirement": 80,
+        "unlocked": false
+    },
+    "mythic": {
+        "name": "Mythic",
+        "description": "Reach 90 points",
+        "requirement": 90,
+        "unlocked": false
+    },
+    "ultimate": {
+        "name": "Ultimate",
+        "description": "Reach 99 points",
+        "requirement": 99,
         "unlocked": false
     }
 }

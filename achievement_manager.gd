@@ -6,10 +6,36 @@ signal achievements_loaded
 signal achievements_reset
 
 # Dictionary to store achievement definitions
+const ACHIEVEMENTS_FILE = "res://achievements.json"
 var achievements := {}
 
+
 func _ready() -> void:
+	load_achievement_definitions()
 	load_achievements()
+
+func load_achievement_definitions() -> void:
+	if not FileAccess.file_exists(ACHIEVEMENTS_FILE):
+		push_error("Achievements file not found!")
+		return
+		
+	var json_file = FileAccess.open(ACHIEVEMENTS_FILE, FileAccess.READ)
+	if json_file == null:
+		push_error("Failed to open achievements file!")
+		return
+		
+	var json_text = json_file.get_as_text()
+	var json = JSON.new()
+	var parse_result = json.parse(json_text)
+	
+	if parse_result != OK:
+		push_error("Failed to parse achievements JSON!")
+		return
+		
+	achievements = json.get_data()
+	# Ensure all achievements start as unlocked
+	for achievement_id in achievements:
+		achievements[achievement_id].unlocked = false
 
 # Reset all achievements to locked state
 func reset_achievements() -> void:
