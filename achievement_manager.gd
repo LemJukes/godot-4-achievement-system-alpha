@@ -6,26 +6,7 @@ signal achievements_loaded
 signal achievements_reset
 
 # Dictionary to store achievement definitions
-var achievements := {
-	"beginner": {
-		"name": "Beginner",
-		"description": "Score your first point",
-		"requirement": 1,
-		"unlocked": false
-	},
-	"intermediate": {
-		"name": "Intermediate",
-		"description": "Reach 10 points",
-		"requirement": 10,
-		"unlocked": false
-	},
-	"expert": {
-		"name": "Expert",
-		"description": "Reach 100 points",
-		"requirement": 100,
-		"unlocked": false
-	}
-}
+var achievements := {}
 
 func _ready() -> void:
 	load_achievements()

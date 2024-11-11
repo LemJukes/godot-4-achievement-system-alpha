@@ -1,0 +1,20 @@
+{
+    "beginner": {
+        "name": "Beginner",
+        "description": "Score your first point",
+        "requirement": 1,
+        "unlocked": false
+    },
+    "intermediate": {
+        "name": "Intermediate",
+        "description": "Reach 10 points",
+        "requirement": 10,
+        "unlocked": false
+    },
+    "expert": {
+        "name": "Expert",
+        "description": "Reach 100 points",
+        "requirement": 100,
+        "unlocked": false
+    }
+}
