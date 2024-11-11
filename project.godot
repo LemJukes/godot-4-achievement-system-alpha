@@ -11,10 +11,16 @@ config_version=5
 [application]
 
 config/name="godot-4-simple-achievement-system"
-run/main_scene="res://itisgame.tscn"
+run/main_scene="res://it_is_a_game.tscn"
 config/features=PackedStringArray("4.3", "Forward Plus")
 config/icon="res://icon.svg"
 
 [autoload]
 
 SaveManager="*res://save_manager.gd"
+AchievementManager="*res://achievement_manager.gd"
+
+[rendering]
+
+renderer/rendering_method="gl_compatibility"
+renderer/rendering_method.mobile="gl_compatibility"
