@@ -1,4 +1,2 @@
-res://achievement_manager.gd
 res://it_is_a_game.tscn
-res://achievement_display.tscn
-res://achievement_notification.tscn
+res://achievement_display.gd
